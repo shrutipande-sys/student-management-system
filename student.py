@@ -10,7 +10,7 @@ def add_student(id, name):
 def remove_student(id):
     if id in students:
         del students[id]
-        return Tru
+        return True
     return False
 
 
