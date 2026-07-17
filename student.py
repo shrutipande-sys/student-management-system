@@ -6,6 +6,7 @@ def add_student(id, name):
     return True
 
 
+
 def remove_student(id):
     if id in students:
         del students[id]
@@ -14,8 +15,10 @@ def remove_student(id):
 
 
 def search_student(id):
-    return students.get(id)
-
+    if id in students:
+        return students[id]
+    else:
+        return "Student Not Found"
 
 def update_student(id, name):
     if id in students:
